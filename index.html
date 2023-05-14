@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <title>36-dars homework</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
+            alt="Logo"
+            width="72"
+            height="57"
+            class="mx-auto d-block my-5"
+          />
+          <h1 class="text-center">Checkout form</h1>
+          <p class="lead text-center mb-4">
+            Below is an example form built entirely with Bootstrap’s form
+            controls. Each required form group has a validation state that can
+            be triggered by attempting to submit the form without completing it.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-8">
+            <h2>Billing address</h2>
+          <div class="row">
+            <div class="col-6 mb-3">
+                <label for="frist-name" class="form-lable mb-3">First name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First name"
+                aria-label="First name"
+              />
+            </div>
+            <div class="col-6 mb-3">
+                <label for="last-name" class="form-lable mb-3">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Last name"
+                aria-label="Last name"
+              />
+            </div>
+            
+            <label for="username" class="form-lable mb-3">Username</label>
+            <div class="input-group mb-3 col-12">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <!-- 12ta ustun -->
+            <div class="col-12 mb-3">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" />
+            </div>
+            <div class="col-12 mb-3">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4" />
+            </div>
+            <div class="col-12 mb-3">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="1234 Main St"
+              />
+            </div>
+            <div class="col-12 mb-3">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress2"
+                placeholder="Apartment, studio, or floor"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity" />
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2 mb-3">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip" />
+            </div>
+            <div class="col-12 border-top pt-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Shipping address is the same as my billing address
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 border-bottom pb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Save this information for next time
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <h3>Payment</h3>
+                  <div class="py-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                        checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Credit card
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                        checked>
+                      <label class="form-check-label" for="gridRadios2">
+                        Debit card
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option1"
+                        checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        paypal
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-sm-2">
+                <div class="col">
+                  <label class="pt-3 pb-1" for="">Name on card</label>
+                  <input type="text" class="form-control" aria-label="First name">
+                </div>
+                <div class="col">
+                  <label class="pt-3 pb-1" for="">Credit card number</label>
+                  <input type="text" class="form-control" aria-label="Last name">
+  
+                </div>
+              </div>
+              <p class="pt-0">Full name as displayed on card</p>
+              <div class="row border-bottom pb-3 mb-3 gap-5">
+                <div class="col-12 col-sm-3  me-5 ">
+                  <label class="pb-2" for="">Expiration</label>
+                  <input type="text">
+                </div>
+                <div class="col-12 col-sm-3">
+                  <label class="pb-2" for="">
+                    CVV</label>
+                  <input type="text">
+                </div>
+              </div>
+    <button class=" btn btn-primary mb-5">Continue to
+      checkout</button>
+          </div>
+        </div>
+      
+        <div class="col-4">
+            <div class="d-flex justify-content-between pb-3">
+                <h3 class="text-primary">Your cart</h3>
+                <p class="bg-primary text-white py-2 px-3 h5 rounded-5">3</p>
+              </div>
+              <div class="carten border">
+                <div class="d-flex justify-content-between bg-white px-3 py-2">
+                  <div>
+                    <h5 class="m-0">Product name</h5>
+                   <p class="text-black-50 m-0 p-0"> Brief description</p>
+                  </div>
+                  <p>$12</p>
+                </div>
+              </div>
+              <div class="carten border">
+                <div class="d-flex justify-content-between bg-white px-3 py-2">
+                  <div>
+                    <h5 class="m-0">Second product</h5>
+                   <p class="text-black-50 m-0 p-0"> Brief description</p>
+                  </div>
+                  <p>$8</p>
+                </div>
+              </div>
+              <div class="carten border">
+                <div class="d-flex justify-content-between bg-white px-3 py-2">
+                  <div>
+                    <h5 class="m-0">Third item</h5>
+                   <p class="text-black-50 m-0 p-0"> Brief description</p>
+                  </div>
+                  <p>$5</p>
+                </div>
+              </div>
+              <div class="carten border">
+                <div class="d-flex justify-content-between bg-white-50 text-success px-3 py-2">
+                  <div>
+                    <h5 class="m-0">Promo code</h5>
+                   <p class="m-0 p-0"> EXAMPLECODE</p>
+                  </div>
+                  <p>$-5</p>
+                </div>
+              </div>
+              <div class="carten border">
+                <div class="d-flex justify-content-between bg-white px-3 pt-3">
+                 <div>   <h6 class="m-0">Total (USD)</h6></div>
+                  <p class="text-black fw-bold">$20</p>
+                </div>
+              </div>
+              <div class="carrer border mt-3 bg-white p-2 pb-0 ">
+                <div class="input-group mb-3 ">
+                
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  <button class="border-0 btn btn-secondary">Redeem</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
